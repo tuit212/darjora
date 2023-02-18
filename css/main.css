@@ -5,4 +5,56 @@
   list-style-type: none;
   text-decoration: none; }
 
+body {
+  font-family: 'Roboto Slab', serif; }
+
+img {
+  object-fit: cover; }
+
+.hero-section {
+  margin: 20px 0px;
+  padding: 20px 0px; }
+  .hero-section .hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+    .hero-section .hero__boxs {
+      display: flex;
+      transform: translateX(0);
+      transition: transform 0.5s ease-in-out;
+      gap: 25px; }
+      .hero-section .hero__boxs-item {
+        width: 150px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out; }
+        .hero-section .hero__boxs-item > img {
+          width: 150px; }
+        .hero-section .hero__boxs-item > p {
+          font-weight: 500;
+          font-size: 16px; }
+        .hero-section .hero__boxs-item:hover > img {
+          transform: scale(1.03); }
+        .hero-section .hero__boxs-item:hover > p {
+          color: crimson; }
+    .hero-section .hero__allow > .left {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      cursor: pointer; }
+      .hero-section .hero__allow > .left > .btn {
+        font-size: 25px; }
+    .hero-section .hero__allow > .right {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      cursor: pointer; }
+      .hero-section .hero__allow > .right > .btn {
+        font-size: 25px; }
+
+.container {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
 /*# sourceMappingURL=main.css.map */
